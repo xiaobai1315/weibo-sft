@@ -14,11 +14,13 @@ class HJHomeTableViewController: UITableViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.green
+        
+        //设置导航栏按钮
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.createBarButton(title: "", image: "navigationbar_friendattention", target: self, selector: #selector(leftBtnClick))
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func leftBtnClick() -> Void {
+        print("left btn click")
     }
 
     // MARK: - Table view data source

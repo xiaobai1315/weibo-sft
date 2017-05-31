@@ -18,6 +18,7 @@
 		4A8455591EDE6615002C7337 /* HJDiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8455581EDE6615002C7337 /* HJDiscoverTableViewController.swift */; };
 		4A84555C1EDE6630002C7337 /* HJMeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A84555B1EDE6630002C7337 /* HJMeTableViewController.swift */; };
 		4A84555E1EDE6E13002C7337 /* HJTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A84555D1EDE6E13002C7337 /* HJTabBar.swift */; };
+		AFAA0FA41EDF0D5C004BA950 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA0FA31EDF0D5C004BA950 /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		4A8455581EDE6615002C7337 /* HJDiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJDiscoverTableViewController.swift; sourceTree = "<group>"; };
 		4A84555B1EDE6630002C7337 /* HJMeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJMeTableViewController.swift; sourceTree = "<group>"; };
 		4A84555D1EDE6E13002C7337 /* HJTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJTabBar.swift; sourceTree = "<group>"; };
+		AFAA0FA31EDF0D5C004BA950 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		4A8455411EDE5F79002C7337 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AFAA0FA21EDF0AEC004BA950 /* Category */,
 				4A84554B1EDE6341002C7337 /* RootVC(根层控制器) */,
 				4A8455421EDE5FA8002C7337 /* NewFeature(新特性) */,
 				4A8455431EDE5FB1002C7337 /* Auth(服务器认证) */,
@@ -273,6 +276,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		AFAA0FA21EDF0AEC004BA950 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AFAA0FA31EDF0D5C004BA950 /* UIBarButtonItem+Extension.swift */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -409,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAA0FA41EDF0D5C004BA950 /* UIBarButtonItem+Extension.swift in Sources */,
 				4A8455591EDE6615002C7337 /* HJDiscoverTableViewController.swift in Sources */,
 				4A8455501EDE63FE002C7337 /* HJRootViewController.swift in Sources */,
 				4A84555E1EDE6E13002C7337 /* HJTabBar.swift in Sources */,
@@ -658,6 +670,7 @@
 				4A84553A1EDE5DC7002C7337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A84553B1EDE5DC7002C7337 /* Build configuration list for PBXNativeTarget "weibo-sftTests" */ = {
 			isa = XCConfigurationList;
@@ -666,6 +679,7 @@
 				4A84553D1EDE5DC7002C7337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A84553E1EDE5DC7002C7337 /* Build configuration list for PBXNativeTarget "weibo-sftUITests" */ = {
 			isa = XCConfigurationList;
@@ -674,6 +688,7 @@
 				4A8455401EDE5DC7002C7337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
