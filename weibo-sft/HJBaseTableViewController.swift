@@ -1,26 +1,25 @@
 //
-//  HJHomeTableViewController.swift
+//  HJBaseTableViewController.swift
 //  weibo-sft
 //
-//  Created by Jermy on 2017/5/31.
+//  Created by Jermy on 2017/6/1.
 //  Copyright © 2017年 Jermy. All rights reserved.
 //
+//  基础的tableViewController，用于请求数据、显示数据;其他页面继承自这个tableView
 
 import UIKit
 
-class HJHomeTableViewController: HJBaseTableViewController {
+class HJBaseTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.green
         
-        //设置导航栏按钮
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem.createBarButton(title: "", image: "navigationbar_friendattention", target: self, selector: #selector(leftBtnClick))
     }
 
-    func leftBtnClick() -> Void {
-        print("left btn click")
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source

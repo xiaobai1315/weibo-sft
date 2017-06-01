@@ -18,6 +18,8 @@
 		4A8455591EDE6615002C7337 /* HJDiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8455581EDE6615002C7337 /* HJDiscoverTableViewController.swift */; };
 		4A84555C1EDE6630002C7337 /* HJMeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A84555B1EDE6630002C7337 /* HJMeTableViewController.swift */; };
 		4A84555E1EDE6E13002C7337 /* HJTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A84555D1EDE6E13002C7337 /* HJTabBar.swift */; };
+		4AC4EB971EE0005B00158DE2 /* HJBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4EB961EE0005B00158DE2 /* HJBaseTableViewController.swift */; };
+		4AC4EB9A1EE008E200158DE2 /* HJAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4EB991EE008E200158DE2 /* HJAuthViewController.swift */; };
 		AFAA0FA41EDF0D5C004BA950 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA0FA31EDF0D5C004BA950 /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		4A8455581EDE6615002C7337 /* HJDiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJDiscoverTableViewController.swift; sourceTree = "<group>"; };
 		4A84555B1EDE6630002C7337 /* HJMeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJMeTableViewController.swift; sourceTree = "<group>"; };
 		4A84555D1EDE6E13002C7337 /* HJTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJTabBar.swift; sourceTree = "<group>"; };
+		4AC4EB961EE0005B00158DE2 /* HJBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJBaseTableViewController.swift; sourceTree = "<group>"; };
+		4AC4EB991EE008E200158DE2 /* HJAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJAuthViewController.swift; sourceTree = "<group>"; };
 		AFAA0FA31EDF0D5C004BA950 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +141,7 @@
 				4A84554B1EDE6341002C7337 /* RootVC(根层控制器) */,
 				4A8455421EDE5FA8002C7337 /* NewFeature(新特性) */,
 				4A8455431EDE5FB1002C7337 /* Auth(服务器认证) */,
+				4AC4EB951EDFFFFE00158DE2 /* BaseTableView */,
 				4A8455441EDE5FB8002C7337 /* HOME(首页) */,
 				4A8455461EDE5FC6002C7337 /* Message(消息) */,
 				4A8455451EDE5FBF002C7337 /* Discover(发现) */,
@@ -156,6 +161,7 @@
 		4A8455431EDE5FB1002C7337 /* Auth(服务器认证) */ = {
 			isa = PBXGroup;
 			children = (
+				4AC4EB991EE008E200158DE2 /* HJAuthViewController.swift */,
 			);
 			name = "Auth(服务器认证)";
 			sourceTree = "<group>";
@@ -272,6 +278,22 @@
 			isa = PBXGroup;
 			children = (
 				4A84555B1EDE6630002C7337 /* HJMeTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4AC4EB951EDFFFFE00158DE2 /* BaseTableView */ = {
+			isa = PBXGroup;
+			children = (
+				4AC4EB981EE0006A00158DE2 /* Controller */,
+			);
+			name = BaseTableView;
+			sourceTree = "<group>";
+		};
+		4AC4EB981EE0006A00158DE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4AC4EB961EE0005B00158DE2 /* HJBaseTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -420,7 +442,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AC4EB9A1EE008E200158DE2 /* HJAuthViewController.swift in Sources */,
 				AFAA0FA41EDF0D5C004BA950 /* UIBarButtonItem+Extension.swift in Sources */,
+				4AC4EB971EE0005B00158DE2 /* HJBaseTableViewController.swift in Sources */,
 				4A8455591EDE6615002C7337 /* HJDiscoverTableViewController.swift in Sources */,
 				4A8455501EDE63FE002C7337 /* HJRootViewController.swift in Sources */,
 				4A84555E1EDE6E13002C7337 /* HJTabBar.swift in Sources */,
