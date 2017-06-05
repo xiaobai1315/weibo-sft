@@ -1,0 +1,6 @@
+framework module Pods_weibo_sft {
+  umbrella header "Pods-weibo-sft-umbrella.h"
+
+  export *
+  module * { export * }
+}
