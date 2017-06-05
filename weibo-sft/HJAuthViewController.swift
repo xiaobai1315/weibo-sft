@@ -10,11 +10,14 @@ import UIKit
 
 class HJAuthViewController: UIViewController, UIWebViewDelegate {
 
+    var webView : UIWebView? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //通过webView加载服务器访问请求页面
         let webView : UIWebView = UIWebView(frame: self.view.frame)
+        self.webView = webView
         webView.delegate = self
         
         self.view.addSubview(webView)
